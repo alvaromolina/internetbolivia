@@ -63,6 +63,7 @@ class Facebook_m extends CI_Model {
 
           $this->load->library('Facebook', $config);
 
-          $this->facebook->destroySession();   
+          //$this->facebook->destroySession();
+          setcookie($this->facebook->getSignedRequestCookieName(), '', time() - 3600, '/');  
     }
 }
