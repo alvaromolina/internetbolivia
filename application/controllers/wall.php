@@ -33,7 +33,8 @@ class Wall extends CI_Controller {
     function add_comment($post_id)
     {
       $_POST['comment'] = sanitize($_POST['comment']);      
-      $comments = $this->Wall_m->setComment($post_id,$_POST); 
+      $comments = $this->Wall_m->setComment($post_id,$_POST);
+      $fb_data = $this->session->userdata('fb_data');        
       $data = array('comments' => $comments, 'post_id' => $post_id,'comments_from'=>0,'fb_data'=>$fb_data);
       $this->load->view('comment',$data);
     }
