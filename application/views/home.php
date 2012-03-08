@@ -51,13 +51,14 @@
 
 
       <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=189985587751564";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=192706770837988";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+
           <div class="container">
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit containerinternet">
@@ -77,7 +78,7 @@ Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
                   </p>
           <h2>¿Que puedo hacer?</h2>
           <ol> 
-            <li> Haz un clikc en <fb:like href="http://localhost/internet/" send="true" layout="button_count" width="100" show_faces="true" font="verdana"></fb:like> para seguir las noticias y haz que la pagina crezca.</li>
+            <li> Haz un clikc en me gusta y compartir <fb:like href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" send="true" layout="button_count" width="50" show_faces="true"></fb:like> para seguir las noticias y haz que la pagina crezca. </li> 
             <li> Comparte tu opinion del <a href="<?= base_url().'index/index/problem';?>"> problema, tus experiencias e informate.</a> </li>
             <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas del problema. </a> </li>
             <li> Como  <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> </li>
