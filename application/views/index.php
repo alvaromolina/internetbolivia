@@ -269,7 +269,7 @@
                   <fb:login-button autologoutlink="true">Ingresa con facebook</fb:login-button>
                   <strong>
                   para poder comentar, votar, borrar y subir archivos.<br> <br>
-                  O ingresa tu nombre/nick: <input type="text" class="input-small" id="nick" value="<? echo getUserName(); ?>" placeholder="Anónimo"> para poder comentar. </strong>
+                  O ingresa tu nombre/nick: <input type="text" class="input-small" id="nick" value="<? echo getUserName(); ?>" placeholder="Anónimo"> para comentar. </strong>
                 <?php }else { ?>
           <div class="span2"> 
 

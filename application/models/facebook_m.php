@@ -19,8 +19,6 @@ class Facebook_m extends CI_Model {
         $fb_data = $this->session->userdata('fb_data');
         $user = $this->facebook->getUser();   
 
-        echo 'User:'.$user;
-
         if(!(isset($fb_data['uid']) and $fb_data['uid'])){
           
           $this->session->set_userdata('uid', '1234');

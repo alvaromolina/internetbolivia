@@ -80,39 +80,60 @@ Unetenos para ser mas en este movimiento.">
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=192706770837988";
+            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=192706770837988";
             fjs.parentNode.insertBefore(js, fjs);
           }(document, 'script', 'facebook-jssdk'));</script>
-
           <div class="container">
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit containerinternet">
-            <img src="<?=base_url();?>img/logo3.png"><br> <BR>
-
+            <img src="<?=base_url();?>img/logo3.png" width="560" heigth="55"><br>
       <!--  <h1>Un mejor internet para Bolivia!</h1> <br> <br> -->
-<p> <h3> ¿El internet  que tenemos en Bolivia tiene <a href="<?= base_url().'index/index/problem';?>">problemas </a>?. <small> ¿Es muy lento?, ¿Es caro?, ¿No hay cobertura en muchos lugares? </small> </h3> <br> 
+<p> <h2> ¿El internet  que tenemos en Bolivia tiene <a href="<?= base_url().'index/index/problem';?>">problemas?</a> </h2><h3><small> ¿Es muy lento?, ¿Es caro?, ¿No hay cobertura en muchos lugares? </small> </h3>
 
-<h3>Pero, alguna vez te preguntaste <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> <small>¿ Es porque somos un país pobre? ¿Es porque somos un país mediterráneo?  ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿O nos estan explotando? <small> </h3> <br>
+<h2>Pero, alguna vez te preguntaste <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> </h2> <h3> <small>¿ Es porque somos un país pobre? ¿Es porque somos un país mediterráneo?  ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿O nos estan explotando? <small> </h3> 
 
-<h3>
-Y a todo esto <a href="<?= base_url().'index/index/solution';?>">¿Que se puede hacer? ¿ Y que se esta haciendo?. </a> </h3><br>
+<h2>
+Y a todo esto <a href="<?= base_url().'index/index/solution';?>">¿Que podemos hacer? ¿Y que se esta haciendo?. </a> </h2><br>
 
-<strong>Esta pagina se crea para responder estas preguntas y mas importante hacer participe a todos para mejorar el internet en Bolivia. </strong><br> <br>
-Creemos que es importante estar informado antes de actuar por lo que no nos limitaremos a enviar una carta al gobierno o empresas (que si lo haremos). Sino también participaremos activamente en las soluciones ya que toda acción no depende de un gobierno, una empresa sino de toda la sociedad activa. <br>
-Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
+<h3>Esta pagina trata de responder estas preguntas y mas importante hacer participe a todos para mejorar el internet en Bolivia. </h3> 
+<h3> <small>
+Creemos que es importante estar informado antes de actuar por lo que no nos limitaremos a enviar una carta al gobierno o empresas (que si lo haremos). Sino también participaremos activamente en las soluciones ya que toda acción no depende de un gobierno, una empresa sino de toda la sociedad activa. </small> </h3>  <h3> Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto. </h3></strong>
+
                   </p>
           <h2>¿Que puedo hacer?</h2>
           <ol>
-            <li>Haz un clikc en me gusta o like de la pagina de facebook para seguir las noticias y contribuir a la pagina:<br>
-<fb:like-box href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" width="300" height="200" show_faces="true" stream="true" header="true"></fb:like-box>
-             </li> 
-            <li> Comparte la pagina mediante estos links: <fb:like href="http://unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br>
+            <h3>
+            <li>Haz un clikc en me gusta (like) de la pagina de facebook para seguir las noticias y contribuir a la pagina: </h2><br>
+                  <div align="center">
+<fb:like-box href="http://www.facebook.com/pages/Por-un-mejor-Internet-en-Bolivia/347049675339188" width="300" height="200" show_faces="true" stream="true" header="true"></fb:like-box>
+                   <br>
+                   <br>
 
-            <li> Comparte tus <a href="<?= base_url().'index/index/problem';?>"> problemas que tienes con internet, e informate de los problemas de otros.</a> </li>
-            <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas de los problemas. </a> </li>
-            <li> Como <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> </li>
-            <li> Informate y contribuye a las posibles <a href="<?= base_url().'index/index/solution';?>"> soluciones para Bolivia y para ti.</a> </li>
+                  </div>
+             </li> 
+            </h3>
+            <h3>
+            <li> Comparte en las redes sociales <a href=""> www.unmejorinternet.com </a> mediante estos botones: <fb:like href="http://www.unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br> <br>
+
+            </h3>
+            <h3>
+
+            <li> Comparte tus <a href="<?= base_url().'index/index/problem';?>"> problemas que tienes con internet, e informate de los problemas de otros.</a> <br> <br> </li>
+           </h3>
+            <h3>
+
+            <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas de los problemas. </a> <br> <br> </li>
+            </h3>
+            <h3>
+
+            <li> Como <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> <br> <br> </li>
+            </h3>
+            <h3>
+
+            <li> Informate y contribuye a las posibles <a href="<?= base_url().'index/index/solution';?>"> soluciones para Bolivia y para ti.</a> <br> <br> </li>
             <!-- <li> Involucrate con esta pagina y el movimiento! </li> -->
+            </h3>
+
           </ol>
 
       </div>
