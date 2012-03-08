@@ -43,7 +43,7 @@ class Facebook_m extends CI_Model {
                           'name' => $profile['name'],
                           'uid' => $user,
                           'loginUrl' => $this->facebook->getLoginUrl(),
-                          'logoutUrl' => $this->facebook->getLogoutUrl(array('next' => 'http://localhost/internetbolivia/')),
+                          'logoutUrl' => $this->facebook->getLogoutUrl(array('next' => 'http://www.unmejorinternet.com/')),
                           'appId' => '192706770837988'
                         );
           $this->session->set_userdata('fb_data', $fb_data);
