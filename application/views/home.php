@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <title>Por un mejor internet en Bolivia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Porque estamos cansados de tener un mal servicio en nuestro pais y queremos mejorar esta situacion.
+Unetenos para ser mas en este movimiento.">
+    <meta name="author" content="alvaromolinac@gmail.com">
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -41,7 +43,8 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel=”image_src” href=”<?= base_url() ?>img/logoMejorInternet.png”/ >
+    <link rel="shortcut icon" href="<?= base_url() ?>img/logoMejorInternet.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -78,12 +81,16 @@ Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
                   </p>
           <h2>¿Que puedo hacer?</h2>
           <ol> 
-            <li> Haz un clikc en me gusta y compartir <fb:like href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" send="true" layout="button_count" width="50" show_faces="true"></fb:like> para seguir las noticias y haz que la pagina crezca. </li> 
-            <li> Comparte tu opinion del <a href="<?= base_url().'index/index/problem';?>"> problema, tus experiencias e informate.</a> </li>
+            <li> Haz un clikc en me gusta de la pagina de facebook para seguir las noticias y contribuir a la pagina: <br>
+<fb:like-box href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" width="300" height="200" show_faces="true" stream="true" header="true"></fb:like-box>
+             </li> 
+            <li> Comparte con tus amigos este sitio mediante estos links: <fb:like href="http://unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br>
+
+            <li> Comparte tu opinion del <a href="<?= base_url().'index/index/problem';?>"> problema que tienes con internet, e informate.</a> </li>
             <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas del problema. </a> </li>
             <li> Como  <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> </li>
             <li> Informate y contribuye a las posibles <a href="<?= base_url().'index/index/solution';?>"> soluciones para Bolivia y para ti.</a> </li>
-            <li> Involucrate con esta pagina y el movimiento! </li>
+            <!-- <li> Involucrate con esta pagina y el movimiento! </li> -->
           </ol>
 
       </div>
