@@ -39,8 +39,8 @@ $(document).ready(function(){
     $.post(base_url+"index/logout", {
 
 	  }, function(response){
-        window.location.href = $('#logouturl').val();      
-    
+        //window.location.href = $('#logouturl').val();      
+        window.location.href = 'http://www.unmejorinternet.com';
     });
   });
 });
