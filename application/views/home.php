@@ -90,26 +90,27 @@ Unetenos para ser mas en este movimiento.">
             <img src="<?=base_url();?>img/logo3.png"><br> <BR>
 
       <!--  <h1>Un mejor internet para Bolivia!</h1> <br> <br> -->
-<p>El internet  es un <a href="<?= base_url().'index/index/problem';?>">problema </a> en Bolivia. Es muy caro, muy lento y no hay cobertura en muchos lugares. <br> <br>
+<p> <h3> ¿El internet  que tenemos en Bolivia tiene <a href="<?= base_url().'index/index/problem';?>">problemas </a>?. <small> ¿Es muy lento?, ¿Es caro?, ¿No hay cobertura en muchos lugares? </small> </h3> <br> 
 
-Pero, alguna vez te preguntaste <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> ¿Es porque somos un país mediterráneo? ¿ Es porque somos un país pobre? ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿O nos estan explotando? <br> <br>
+<h3>Pero, alguna vez te preguntaste <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> <small>¿ Es porque somos un país pobre? ¿Es porque somos un país mediterráneo?  ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿O nos estan explotando? <small> </h3> <br>
 
-<a href="<?= base_url().'index/index/solution';?>">¿Y a todo esto que se puede hacer? ¿ Y que se esta haciendo?. </a><br> <br>
+<h3>
+Y a todo esto <a href="<?= base_url().'index/index/solution';?>">¿Que se puede hacer? ¿ Y que se esta haciendo?. </a> </h3><br>
 
-Esta pagina se crea para responder estas preguntas y mas importante hacer participe a todos para mejorar el internet en Bolivia. <br> <br>
+<strong>Esta pagina se crea para responder estas preguntas y mas importante hacer participe a todos para mejorar el internet en Bolivia. </strong><br> <br>
 Creemos que es importante estar informado antes de actuar por lo que no nos limitaremos a enviar una carta al gobierno o empresas (que si lo haremos). Sino también participaremos activamente en las soluciones ya que toda acción no depende de un gobierno, una empresa sino de toda la sociedad activa. <br>
 Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
                   </p>
           <h2>¿Que puedo hacer?</h2>
           <ol>
-            <li>Haz un clikc en me gusta de la pagina de facebook para seguir las noticias y contribuir a la pagina:<br>
+            <li>Haz un clikc en me gusta o like de la pagina de facebook para seguir las noticias y contribuir a la pagina:<br>
 <fb:like-box href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" width="300" height="200" show_faces="true" stream="true" header="true"></fb:like-box>
              </li> 
-            <li> Comparte con tus amigos este sitio mediante estos links: <fb:like href="http://unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br>
+            <li> Comparte la pagina mediante estos links: <fb:like href="http://unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br>
 
-            <li> Comparte tu opinion del <a href="<?= base_url().'index/index/problem';?>"> problema que tienes con internet, e informate.</a> </li>
-            <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas del problema. </a> </li>
-            <li> Como  <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> </li>
+            <li> Comparte tus <a href="<?= base_url().'index/index/problem';?>"> problemas que tienes con internet, e informate de los problemas de otros.</a> </li>
+            <li> Informate y contribuye a entender las <a href="<?= base_url().'index/index/root';?>"> causas de los problemas. </a> </li>
+            <li> Como <a href="<?= base_url().'index/index/future';?>"> usas o deberias usar el internet y porque necesitas que mejore. </a> </li>
             <li> Informate y contribuye a las posibles <a href="<?= base_url().'index/index/solution';?>"> soluciones para Bolivia y para ti.</a> </li>
             <!-- <li> Involucrate con esta pagina y el movimiento! </li> -->
           </ol>

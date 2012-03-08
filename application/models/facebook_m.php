@@ -4,26 +4,26 @@ class Facebook_m extends CI_Model {
     public function __construct()
     {
       parent::__construct();
-        
-    }
-
-    function init(){
-
-        $fb_data = $this->session->userdata('fb_data');
-
-        if(!(isset($fb_data['uid']) and $fb_data['uid'])){
-          
-
-          $config = array(
+      $config = array(
                         'appId'  => '192706770837988',
                         'secret' => 'ecbc201397514b41174875a844f2501e',
                         'fileUpload' => true, // Indicates if the CURL based @ syntax for file uploads is enabled.
                         );
 
-          $this->load->library('Facebook', $config);
+      $this->load->library('Facebook', $config);
+  
+    }
 
+    function init(){
+
+        $fb_data = $this->session->userdata('fb_data');
+        $user = $this->facebook->getUser();   
+
+        echo 'User:'.$user;
+
+        if(!(isset($fb_data['uid']) and $fb_data['uid'])){
+          
           $this->session->set_userdata('uid', '1234');
-   
           $user = $this->facebook->getUser();   
           $profile = null;
           if($user)

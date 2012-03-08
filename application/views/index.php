@@ -202,42 +202,6 @@
           <div class="span6">    
             <img src="<?=base_url();?>img/logo3.png"><br> <BR>
           </div>
-                <?php if (!$fb_data['uid']) { ?>                    
-
-          <div class="span6"> 
-
-
-                  <fb:login-button autologoutlink="true">Ingresa con facebook</fb:login-button>
-                  para poder comentar, votar, borrar y subir archivos.<br> <br>
-                  O ingresa tu nombre: <input type="text" class="input-small" id="nick" value="<? echo getUserName(); ?>" placeholder="Anónimo"> para poder comentar.
-
-                <?php }else { ?>
-                    
-          <div class="span2 offset4"> 
-
-                      <div class="divtablewrapper">
-                          <div class="divtable">
-                            <div class="divrow">
-                              <div class="rowspanned divcell">
-                                 <a href="#">  <img class="rounded-corners" src="http://graph.facebook.com/<?=$fb_data['uid']?>/picture" > </a>
-                              </div>
-                              <div class="divcell">
-                                 <a href="#"> <?=$fb_data['me']['name']?> </a>
-                              </div>
-                            </div>
-                            <div class="divrow">
-                              <div class="empty divcell"></div>
-                              <div class="divcell">
-                                   <a id="exit" style="cursor:hand"> Salir </a> 
-                                   <!-- <fb:login-button autologoutlink="true">Salir</fb:login-button> -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                <?php } ?>
-
-
-          </div>
           <div id="fb-root"></div>
           <script>               
             window.fbAsyncInit = function() {
@@ -297,7 +261,43 @@
         </div>
             <hr>
         
-     
+        <div class="row">
+               <?php if (!$fb_data['uid']) { ?>                    
+
+          <div class="span7"> 
+                    
+                  <fb:login-button autologoutlink="true">Ingresa con facebook</fb:login-button>
+                  <strong>
+                  para poder comentar, votar, borrar y subir archivos.<br> <br>
+                  O ingresa tu nombre/nick: <input type="text" class="input-small" id="nick" value="<? echo getUserName(); ?>" placeholder="Anónimo"> para poder comentar. </strong>
+                <?php }else { ?>
+          <div class="span2"> 
+
+                      <div class="divtablewrapper">
+                          <div class="divtable">
+                            <div class="divrow">
+                              <div class="rowspanned divcell">
+                                 <a href="#">  <img class="rounded-corners" src="http://graph.facebook.com/<?=$fb_data['uid']?>/picture" > </a>
+                              </div>
+                              <div class="divcell">
+                                 <a href="#"> <?=$fb_data['me']['name']?> </a>
+                              </div>
+                            </div>
+                            <div class="divrow">
+                              <div class="empty divcell"></div>
+                              <div class="divcell">
+                                   <a id="exit" style="cursor:hand"> Salir </a> 
+                                   <!-- <fb:login-button autologoutlink="true">Salir</fb:login-button> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <?php } ?>
+
+
+          </div>
+
+        </div>
         <div class="row">
             <div class="span7 columns">
 
@@ -395,13 +395,13 @@
 
               </script>
 
-
             </div>
-            <div class="span5 columns">
+            <div class="span1 columns"> &nbsp;
+            </div>
+            <div class="span4 columns">
                
               <div class="hero-unit">
                 <h3>
-
 
                 <?php if($section=="problem") { ?> 
                       <i>
@@ -433,10 +433,7 @@
                    </i>
  <?php } ?>
 
-
-
-
-                </h3> <br> <br>
+                  </h3> <br> <br>
                   <i>
                   <small> * Toda publicidad o spam sera eliminada </small>
                   </i>
