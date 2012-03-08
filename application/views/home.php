@@ -9,6 +9,29 @@
 Unetenos para ser mas en este movimiento.">
     <meta name="author" content="alvaromolinac@gmail.com">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="<?= base_url() ?>js/jquery.tabSlideOut.v1.3.js"></script>
+         
+     <script>
+       $(function(){
+           $('.slide-out-div').tabSlideOut({
+               tabHandle: '.handle',                              //class of the element that will be your tab
+               pathToTabImage: '<?= base_url() ?>img/tabcontactos.png',          //path to the image for the tab *required*
+               imageHeight: '200px',                               //height of tab image *required*
+               imageWidth: '40px',                               //width of tab image *required*    
+               tabLocation: 'left',                               //side of screen where tab lives, top, right, bottom, or left
+               speed: 300,                                        //speed of animation
+               action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
+               topPos: '200px',                                   //position from the top
+               fixedPosition: false,                               //options: true makes it stick(fixed position) on scroll
+               onLoadSlideOut: false
+           });
+       });
+
+   </script>
+
+   
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -21,7 +44,6 @@ Unetenos para ser mas en este movimiento.">
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
 
     <!-- Le styles -->
@@ -51,7 +73,7 @@ Unetenos para ser mas en este movimiento.">
   </head>
 
   <body>
-
+        
 
       <div id="fb-root"></div>
           <script>(function(d, s, id) {
@@ -68,20 +90,19 @@ Unetenos para ser mas en este movimiento.">
             <img src="<?=base_url();?>img/logo3.png"><br> <BR>
 
       <!--  <h1>Un mejor internet para Bolivia!</h1> <br> <br> -->
-<p>El internet tiene  <a href="<?= base_url().'index/index/problem';?>">problemas </a> en Bolivia. Es muy caro, muy lento y no hay cobertura en muchos lugares. <br> <br>
+<p>El internet  es un <a href="<?= base_url().'index/index/problem';?>">problema </a> en Bolivia. Es muy caro, muy lento y no hay cobertura en muchos lugares. <br> <br>
 
-Pero, <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> ¿Es porque somos un país mediterráneo? ¿Un país pobre? ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿Nos explotan? <br> <br>
+Pero, alguna vez te preguntaste <a href="<?= base_url().'index/index/root';?>"> ¿Cual es la razón? </a> ¿Es porque somos un país mediterráneo? ¿ Es porque somos un país pobre? ¿Es porque el gobierno no implementa las políticas correctas? ¿O las empresas son ineficaces en su servicio? ¿O nos estan explotando? <br> <br>
 
-<a href="<?= base_url().'index/index/solution';?>">¿Y a todo esto que se puede hacer? ¿Que se esta haciendo?. </a><br> <br>
+<a href="<?= base_url().'index/index/solution';?>">¿Y a todo esto que se puede hacer? ¿ Y que se esta haciendo?. </a><br> <br>
 
 Esta pagina se crea para responder estas preguntas y mas importante hacer participe a todos para mejorar el internet en Bolivia. <br> <br>
-
 Creemos que es importante estar informado antes de actuar por lo que no nos limitaremos a enviar una carta al gobierno o empresas (que si lo haremos). Sino también participaremos activamente en las soluciones ya que toda acción no depende de un gobierno, una empresa sino de toda la sociedad activa. <br>
 Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
                   </p>
           <h2>¿Que puedo hacer?</h2>
-          <ol> 
-            <li> Haz un clikc en me gusta de la pagina de facebook para seguir las noticias y contribuir a la pagina: <br>
+          <ol>
+            <li>Haz un clikc en me gusta de la pagina de facebook para seguir las noticias y contribuir a la pagina:<br>
 <fb:like-box href="http://www.facebook.com/pages/Por-un-mejor-Internet-para-Bolivia/347049675339188" width="300" height="200" show_faces="true" stream="true" header="true"></fb:like-box>
              </li> 
             <li> Comparte con tus amigos este sitio mediante estos links: <fb:like href="http://unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br>
@@ -104,27 +125,21 @@ Creemos que podemos solucionar este problema y necesitamos tu ayuda para esto.
       <hr>
 
       <footer>
-        <p>&copy; Mejor internet Bolivia 2012</p>
+        <p>&copy; Por un  mejor internet en Bolivia 2012</p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="slide-out-div">
+        <a class="handle" href="http://link-for-non-js-users">Content</a>
+        <h3>Contactanos  y envia tus sugerencias a: </h3>
+        <a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br />
+    </div>
+
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?= base_url() ?>js/jquery.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-transition.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-alert.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-modal.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-dropdown.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-scrollspy.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-tab.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-tooltip.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-popover.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-button.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-collapse.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-carousel.js"></script>
-    <script src="<?= base_url() ?>js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>

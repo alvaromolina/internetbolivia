@@ -23,7 +23,25 @@
     <script src="<?=base_url();?>js/javascript.js" type="text/javascript"></script>
     <script src="<?=base_url();?>js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
     <script src="<?=base_url();?>js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+    <script src="<?= base_url() ?>js/jquery.tabSlideOut.v1.3.js"></script>
+         
+     <script>
+       $(function(){
+           $('.slide-out-div').tabSlideOut({
+               tabHandle: '.handle',                              //class of the element that will be your tab
+               pathToTabImage: '<?= base_url() ?>img/tabcontactos.png',          //path to the image for the tab *required*
+               imageHeight: '200px',                               //height of tab image *required*
+               imageWidth: '40px',                               //width of tab image *required*    
+               tabLocation: 'left',                               //side of screen where tab lives, top, right, bottom, or left
+               speed: 300,                                        //speed of animation
+               action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
+               topPos: '200px',                                   //position from the top
+               fixedPosition: false,                               //options: true makes it stick(fixed position) on scroll
+               onLoadSlideOut: false
+           });
+       });
 
+   </script>
 
 
     <script>
@@ -431,10 +449,17 @@
       
       <hr>
       <footer>
-        <p>&copy; Internet 2012</p>
+        <p>&copy; Por un mejor internet en Bolivia 2012</p>
       </footer>
 
     </div>
+    <div class="slide-out-div">
+        <a class="handle" href="http://link-for-non-js-users">Content</a>
+        <h3>Contactanos  y envia tus sugerencias a: </h3>
+        <a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br />
+    </div>
+
+>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

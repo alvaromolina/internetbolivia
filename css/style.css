@@ -53,3 +53,11 @@ padding: 8px 8px;
   top: 0;
   bottom: 0;
 }
+
+.slide-out-div {
+    padding: 20px;
+    width: 250px;
+    background: #EDF9FE;
+    border: 5px solid white;
+    height: 100px;
+}
