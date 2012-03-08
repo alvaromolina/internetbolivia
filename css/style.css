@@ -1,0 +1,55 @@
+body {
+  background-color: white; 
+  padding: 30px; 
+  margin: 0;
+  color: #0A1D5F; 
+  background:url(../img/wallpaper.jpg) no-repeat 50% -70px;
+
+  
+  /*background-image: url(../img/body-bg.jpg);
+  background-repeat: repeat;
+  background-position: 0 00px;*/
+  }
+h1, h2, h3, h4 { color: #0A1D5F;}
+.social-icons {
+padding: 8px 8px;
+}
+
+.containerinternet{
+  background-color: #F1FBFE;
+  padding: 40px;
+  border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+.divtablewrapper {
+  position: relative;
+}
+
+.divtable {
+  display: table;
+}
+.divrow {
+  display: table-row;
+}
+.divcell {
+  display: table-cell;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  
+  
+  margin-left: 0px;
+}
+.divcell.empty
+{
+  border: none;
+  width: 50px;
+}
+.divcell.rowspanned {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
