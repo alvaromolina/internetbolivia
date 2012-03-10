@@ -30,6 +30,10 @@ $(document).ready(function(){
 		$('#loadpage').html(response).fadeIn(500);
 	});
  	
+  $('.myCarousel').carousel({
+    interval: 2000
+  });
+
 	$('#uploadMedia').click(function(){
 		$('#show_img_upload_div').show();
 		//$('.main_bar').hide();

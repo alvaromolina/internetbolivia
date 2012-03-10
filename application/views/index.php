@@ -229,32 +229,32 @@
         <div class="row">
           <div class="span2 columns">
             <ul class="nav nav-pills">
-            <li <?php if($section=="problem") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/problem" class="krona">EL PROBLEMA</a></li>
+            <li <?php if($section=="problem") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/problem" class="">EL PROBLEMA</a></li>
             </ul>
           </div> 
-          <div class="span3 columns">
+          <div class="span2 columns">
             <ul class="nav nav-pills">
-              <li <?php if($section=="root") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/root"  class="krona"> LA RAIZ DEL PROBLEMA</a></li>
+              <li <?php if($section=="root") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/root"  class="">LA RAZON DEL PROBLEMA</a></li>
             </ul>
           </div>   
 
           <div class="span2 columns">
             <ul class="nav nav-pills">
-              <li <?php if($section=="solution") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/solution"  class="krona"> LA SOLUCION</a></li>
-            </ul>
-          </div>  
-
-
-          <div class="span3 columns">
-            <ul class="nav nav-pills">
-              <li <?php if($section=="future") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/future"  class="krona"> UN MEJOR FUTURO</a></li>
+              <li <?php if($section=="solution") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/solution"  class=""> SOLUCIONES</a></li>
             </ul>
           </div>  
 
 
           <div class="span2 columns">
             <ul class="nav nav-pills">
-              <li <?php if($section=="free") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/free"  class="krona"> SECTOR LIBRE </a></li>
+              <li <?php if($section=="future") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/future"  class=""> USO DEL INTERNET </a></li>
+            </ul>
+          </div>  
+
+
+          <div class="span2 columns">
+            <ul class="nav nav-pills">
+              <li <?php if($section=="free") echo 'class="active"' ?>><a href="<?=base_url();?>index/index/free"  class=""> LIBRE </a></li>
             </ul>
           </div>  
 
@@ -262,16 +262,91 @@
             <hr>
         
         <div class="row">
-               <?php if (!$fb_data['uid']) { ?>                    
+              
+        </div>
+        <div class="row">
+            <div class="span6 columns">
+               
 
-          <div class="span7"> 
-                    
+                <?php if($section=="problem") { ?> 
+                        <h3> Contenido  </h3>
+                        <div id="myCarousel" class="carousel">
+                        <div class="carousel-inner">
+                          <div class="active item" id="problem1"> 
+                              <div class="hero-unit" align="center">
+
+                              <iframe width="300" height="250" src="http://www.youtube.com/embed/TYH8yL-FomQ" frameborder="0" allowfullscreen></iframe>
+                              <div class="carousel-caption">
+                                <h4> Eduardo Rojas en ATB</h4>
+                                <p>Se explica porque el internet tiene porblemas en Bolivia </p>
+                              </div> <br>
+                              <div class="fb-comments" data-href="http://localhost/internetbolivia/index/index/problem#problem3" data-num-posts="5" data-width="470"></div>
+
+                              </div>
+
+                          </div>
+                          <div class="item" id="problem2"> Es un problema para alguien?, si no crees ve estas paginas y grupos en facebook:
+
+                          </div>
+                          <div class="item" id="problem3"></div>
+                        </div>
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                      </div>
+                        <h3> Cuestioanrios, etc  </h3>
+
+                      <!--
+                      <i>
+                      <small>                      Comparte tus experiencias con otras personas igual de frustradas que tu! No estas sol@!<br>
+                      Nos importa tus opiniones. Pon lo que quieras.<br>
+                      Pero tambien nos interesa los datos objetivos. ¿Es caro respecto a que? ¿Es mas lento que otros paises de la region? del mundo? Comparte lo que sabes y si tienes enlaces, datos de estudios o publicaciones compartelos.<br>
+                      Toda la informacion se podra acceder por esta pagina. </small>
+                      <br> 
+                   </i> -->
+
+<?php } ?>
+                <?php if($section=="root") { ?> <i> 
+                        <h3> Contenido  </h3>
+                        <h3> Cuestioanrios, etc  </h3>
+
+                   </i>
+<?php } ?>
+                <?php if($section=="solution") { ?> <i>
+                        <h3> Contenido  </h3>
+                        <h3> Cuestioanrios, etc  </h3>
+ <?php } ?>
+                <?php if($section=="future") { ?> 
+                        <h3> Contenido  </h3>
+                        <h3> Cuestioanrios, etc  </h3>
+
+
+ <?php } ?>
+                <?php if($section=="free") { ?> <i>
+                        <h3> Contenido  </h3>
+                        <h3> Cuestioanrios, etc  </h3>
+
+                    <?php } ?>
+
+                  <i>
+                  <!-- <small> * Toda publicidad o spam sera eliminada </small> -->
+                  </i>
+                <p>
+                </a>
+                </p>
+          </div>
+            
+          <div class="span6 columns">
+
+
+          <?php if (!$fb_data['uid']) { ?>                    
+
+          <div class="login"> 
                   <fb:login-button autologoutlink="true">Ingresa con facebook</fb:login-button>
                   <strong>
                   para poder comentar, votar, borrar y subir archivos.<br> <br>
                   O ingresa tu nombre/nick: <input type="text" class="input-small" id="nick" value="<? echo getUserName(); ?>" placeholder="Anónimo"> para comentar. </strong>
                 <?php }else { ?>
-          <div class="span2"> 
+          <div class="login"> 
 
                       <div class="divtablewrapper">
                           <div class="divtable">
@@ -294,23 +369,18 @@
                         </div>
                 <?php } ?>
 
-
           </div>
 
-        </div>
-        <div class="row">
-            <div class="span7 columns">
+
 
               <h3> 
-                <?php if($section=="problem") { ?> ¿Cuál es el problema con el internet en Bolivia? <?php } ?>
-                <?php if($section=="root") { ?> ¿Cuál es el razon que el internet es tan malo en Bolivia? <?php } ?>
-                <?php if($section=="solution") { ?> ¿Que soluciones hay para mejorar el internet en Bolivia? ¿Y que podemos hacer? <?php } ?>
-                <?php if($section=="future") { ?> ¿Como usas el internet y como mejoraria tu vida y de  otras personas si hubiera un mejor internet? <?php } ?>
+                <?php if($section=="problem") { ?> ¿Que opinas del internet en Bolivia? ¿Hay algun problema? <?php } ?>
+                <?php if($section=="root") { ?> ¿Porque piensas que el internet es malo en Bolivia? <?php } ?>
+                <?php if($section=="solution") { ?> ¿Que podemos hacer para mejorar el internet?<?php } ?>
+                <?php if($section=="future") { ?> ¿? <?php } ?>
                 <?php if($section=="free") { ?> Pon lo que quieras respecto al internet en Bolivia! <?php } ?>
-
               </h3>
               <div style="width:600px; margin-top:10px; padding:5px;">
-                <br clear="all">
                 <div class="UIComposer_Box" id="UIComposer_Box">
 
                   <input type="hidden" value='<?=$section?>' id='section'> 
@@ -396,52 +466,7 @@
               </script>
 
             </div>
-            <div class="span1 columns"> &nbsp;
-            </div>
-            <div class="span4 columns">
-               
-              <div class="hero-unit">
-                <h3>
 
-                <?php if($section=="problem") { ?> 
-                      <i>
-                      <small>                      Comparte tus experiencias con otras personas igual de frustradas que tu! No estas sol@!<br>
-                      Nos importa tus opiniones. Pon lo que quieras.<br>
-                      Pero tambien nos interesa los datos objetivos. ¿Es caro respecto a que? ¿Es mas lento que otros paises de la region? del mundo? Comparte lo que sabes y si tienes enlaces, datos de estudios o publicaciones compartelos.<br>
-                      Toda la informacion se podra acceder por esta pagina. </small>
-                      <br>
-                   </i>
-<?php } ?>
-                <?php if($section=="root") { ?> <i> 
-                      <small>            Informate , preguntate , responde y analiza porque estamos en esta situacion!.            </small>
-                      <br>
-                   </i>
-<?php } ?>
-                <?php if($section=="solution") { ?> <i>
-                      <small> Que se deberia hacer? Quien deberia hacerlo? Alguien ya esta haciendo algo?! Y que cosas uno puede hacer para mejorar su relacion con el internet.                      </small>
-                      <br>
-                   </i>
- <?php } ?>
-                <?php if($section=="future") { ?> <i>
-                      <small> Que nos estamos perdiendo por no tener un buen internet ? Como podria mejorar nuestra vida con un mejor internet? Que hacemos ahora con el internet ? </small>
-                      <br>
-                   </i>
- <?php } ?>
-                <?php if($section=="free") { ?> <i>
-                      <small>Pon cualquier cosa que quieras, que tenga que ver con el tema de internet en Bolivia y consideres que no entra en los otros puntos.</small>
-                      <br>
-                   </i>
- <?php } ?>
-
-                  </h3> <br> <br>
-                  <i>
-                  <small> * Toda publicidad o spam sera eliminada </small>
-                  </i>
-                <p>
-                </a>
-                </p>
-              </div>
-            </div>
       </div>
       
       <hr>
@@ -453,7 +478,7 @@
     <div class="slide-out-div">
         <a class="handle" href="http://link-for-non-js-users">Content</a>
         <h3>Contactanos  y envia tus sugerencias a: </h3>
-        <a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br />
+        <!--<a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br /> -->
     </div>
 
 
@@ -462,6 +487,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?=base_url();?>js/bootstrap-transition.js"></script>
     <script src="<?=base_url();?>js/bootstrap-dropdown.js"></script>
+    <script src="<?=base_url();?>js/bootstrap-carousel.js"></script>
 
     <!--<script src="<?=base_url();?>js/bootstrap-alert.js"></script> -->
     <!--<script src="<?=base_url();?>js/bootstrap-modal.js"></script> 
@@ -471,7 +497,6 @@
     <script src="<?=base_url();?>js/bootstrap-popover.js"></script>
     <script src="<?=base_url();?>js/bootstrap-button.js"></script>
     <script src="<?=base_url();?>js/bootstrap-collapse.js"></script>
-    <script src="<?=base_url();?>js/bootstrap-carousel.js"></script>
     <script src="<?=base_url();?>js/bootstrap-typeahead.js"></script>-->
 
   </body>

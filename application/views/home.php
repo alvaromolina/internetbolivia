@@ -113,7 +113,7 @@ Creemos que es importante estar informado antes de actuar por lo que no nos limi
              </li> 
             </h3>
             <h3>
-            <li> Comparte en las redes sociales <a href=""> www.unmejorinternet.com </a> mediante estos botones: <fb:like href="http://www.unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br> <br>
+          <!---  <li> Comparte en las redes sociales <a href=""> www.unmejorinternet.com </a> mediante estos botones: <fb:like href="http://www.unmejorinternet.com/" send="true" layout="button_count" width="50" show_faces="true"></fb:like> <br> <br> -->
 
             </h3>
             <h3>
@@ -155,7 +155,7 @@ Creemos que es importante estar informado antes de actuar por lo que no nos limi
     <div class="slide-out-div">
         <a class="handle" href="http://link-for-non-js-users">Content</a>
         <h3>Contactanos  y envia tus sugerencias a: </h3>
-        <a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br />
+        <!-- a href="mailto:wpaoli@gmail.com">contacto@unmejorinternet.com</a><br /><br /> -->
     </div>
 
 
